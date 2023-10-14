@@ -312,7 +312,7 @@ Transform:
   m_GameObject: {fileID: 652501929}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -2, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 1}
+  m_LocalScale: {x: 16.05, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -328,9 +328,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1571609538}
   - component: {fileID: 1571609537}
-  - component: {fileID: 1571609539}
   - component: {fileID: 1571609541}
   - component: {fileID: 1571609542}
+  - component: {fileID: 1571609539}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged

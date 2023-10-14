@@ -27,13 +27,13 @@ public class PlayerMovement : MonoBehaviour
     {
         float input = playerControls.Player.Movement.ReadValue<float>();
 
-        if (Mathf.Abs(rb.velocity.x) >= maxSpeed)
-        {
-            rb.AddForce(new Vector2(rb.velocity.x - input * maxSpeed, 0));
-        }
-        else if (Mathf.Abs(input) > 0)
+        if (Mathf.Abs(input) > 0 && Mathf.Abs(rb.velocity.x) < maxSpeed)
         {
             rb.AddForce(new Vector2(input * speed, 0));
+        }
+        else if (Mathf.Abs(rb.velocity.x) >= maxSpeed)
+        {
+            rb.AddForce(new Vector2(rb.velocity.x - rb.velocity.x * maxSpeed, 0));
         }
         else if (input == 0 && Mathf.Abs(rb.velocity.x) > 0)
         {
