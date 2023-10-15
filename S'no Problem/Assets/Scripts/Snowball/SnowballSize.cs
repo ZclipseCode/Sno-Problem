@@ -16,7 +16,7 @@ public class SnowballSize : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Mathf.Abs(rb.velocity.x) > 0 && IsGrounded())
+        if (Mathf.Abs(rb.velocity.x) > 0.1f && IsGrounded())
         {
             Grow();
         }
