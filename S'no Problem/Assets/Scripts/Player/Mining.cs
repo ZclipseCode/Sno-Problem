@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Icicle : MonoBehaviour
+public class Mining : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!GameManager.isMining && (collision.CompareTag("Player") || collision.CompareTag("Snowball")))
+        if (collision.CompareTag("Icicle"))
         {
             Destroy(collision.gameObject);
         }
