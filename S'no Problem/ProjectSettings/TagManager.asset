@@ -50,6 +50,9 @@ TagManager:
   - name: Midground
     uniqueID: 1310432715
     locked: 0
+  - name: Snowball
+    uniqueID: 4140275587
+    locked: 0
   - name: Characters
     uniqueID: 814117759
     locked: 0

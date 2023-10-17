@@ -8,6 +8,7 @@ public class SnowballSize : MonoBehaviour
     [SerializeField] float groundedRange = 0.01f;
     [SerializeField] LayerMask ground;
     Rigidbody2D rb;
+    float stoppingSpeed = 0.1f;
 
     private void Awake()
     {
@@ -16,7 +17,7 @@ public class SnowballSize : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Mathf.Abs(rb.velocity.x) > 0.1f && IsGrounded())
+        if (Mathf.Abs(rb.velocity.x) > stoppingSpeed && IsGrounded())
         {
             Grow();
         }
