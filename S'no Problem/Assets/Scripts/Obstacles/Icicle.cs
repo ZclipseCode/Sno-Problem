@@ -6,7 +6,12 @@ public class Icicle : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!GameManager.isMining && (collision.CompareTag("Player") || collision.CompareTag("Snowball")))
+        if (!GameManager.isMining && (collision.CompareTag("Player")))
+        {
+            Destroy(collision.gameObject);
+        }
+
+        if (collision.CompareTag("Snowball"))
         {
             Destroy(collision.gameObject);
         }

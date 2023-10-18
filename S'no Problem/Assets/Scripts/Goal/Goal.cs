@@ -6,27 +6,41 @@ public class Goal : MonoBehaviour
 {
     [SerializeField] Transform center;
     [SerializeField] float pullSpeed = 1;
-    float distanceThreshold = 0.1f;
+    [SerializeField] int targetSnowballs = 2;
+    float distanceThreshold = 0.01f;
+    float previousSnowballHeight = 0;
+    float snowmanIntersection = 0.08f;
+    int sortingOrder = 0;
+    int totalSnowballs;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Snowball"))
         {
+            IncreaseSnowballs();
+
+            sortingOrder++;
+            SpriteRenderer sr = collision.GetComponent<SpriteRenderer>();
+            sr.sortingOrder = sortingOrder;
+
             StopSnowball(collision.gameObject);
 
             Rigidbody2D rb = collision.GetComponent<Rigidbody2D>();
-            StartCoroutine(PullTowardsCenter(rb));
+
+            previousSnowballHeight = previousSnowballHeight * 2 + collision.bounds.size.y / 2 - snowmanIntersection;
+
+            StartCoroutine(PullTowards(rb, new Vector3(center.position.x, previousSnowballHeight + center.position.y, 0)));
         }
     }
 
-    IEnumerator PullTowardsCenter(Rigidbody2D rb)
+    IEnumerator PullTowards(Rigidbody2D rb, Vector3 destination)
     {
-        float startY = rb.transform.position.y;
-
-        while (Vector2.Distance(new Vector2(rb.position.x, startY), new Vector2(center.position.x, startY)) > distanceThreshold)
+        while (Vector2.Distance(rb.position, destination) > distanceThreshold)
         {
-            float xDirection = center.transform.position.x - rb.transform.position.x;
-            rb.MovePosition(rb.transform.position + new Vector3(xDirection * pullSpeed * Time.fixedDeltaTime, 0, 0));
+            float xDirection = destination.x - rb.transform.position.x;
+            float yDirection = destination.y - rb.transform.position.y;
+
+            rb.MovePosition(rb.transform.position + new Vector3(xDirection, yDirection, 0) * pullSpeed * Time.fixedDeltaTime);
 
             yield return null;
         }
@@ -36,6 +50,16 @@ public class Goal : MonoBehaviour
     {
         snowball.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
         snowball.GetComponent<Rigidbody2D>().gravityScale = 0;
-        snowball.GetComponent<Collider2D>().enabled = false;
+        snowball.GetComponent<Collider2D>().isTrigger = true;
+    }
+
+    void IncreaseSnowballs()
+    {
+        totalSnowballs++;
+
+        if (totalSnowballs >= targetSnowballs)
+        {
+            Debug.Log("Win");
+        }
     }
 }
