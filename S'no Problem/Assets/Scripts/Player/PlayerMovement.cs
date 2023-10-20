@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] float speed = 1;
     [SerializeField] float maxSpeed = 1;
+    [SerializeField] bool facingRight;
     Rigidbody2D rb;
     PlayerControls playerControls;
 
@@ -39,6 +40,20 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(new Vector2(-rb.velocity.x * speed, 0));
         }
+
+        if ((input > 0 && !facingRight) || (input < 0 && facingRight))
+        {
+            Flip();
+        }
+    }
+
+    void Flip()
+    {
+        Vector3 currentScale = gameObject.transform.localScale;
+        currentScale.x *= -1;
+        gameObject.transform.localScale = currentScale;
+
+        facingRight = !facingRight;
     }
 
     private void OnDestroy()
