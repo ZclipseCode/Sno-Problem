@@ -10,8 +10,12 @@ public class SnowballSize : MonoBehaviour
     Rigidbody2D rb;
     float stoppingSpeed = 0.1f;
 
+    public delegate void GrowthDelegate();
+    public static GrowthDelegate growth;
+
     private void Awake()
     {
+        growth += Grow;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -19,7 +23,8 @@ public class SnowballSize : MonoBehaviour
     {
         if (Mathf.Abs(rb.velocity.x) > stoppingSpeed && IsGrounded())
         {
-            Grow();
+            //Grow();
+            growth?.Invoke();
         }
     }
 
@@ -45,5 +50,10 @@ public class SnowballSize : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y) + Vector2.down * groundedRange);
+    }
+
+    private void OnDestroy()
+    {
+        growth -= Grow;
     }
 }
