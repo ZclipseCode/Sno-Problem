@@ -141,6 +141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   maxSpeed: 3
+  facingRight: 1
 --- !u!114 &2497184545143778924
 MonoBehaviour:
   m_ObjectHideFlags: 0

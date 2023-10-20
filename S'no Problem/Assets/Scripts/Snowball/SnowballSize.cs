@@ -15,7 +15,6 @@ public class SnowballSize : MonoBehaviour
 
     private void Awake()
     {
-        growth += Grow;
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -23,8 +22,7 @@ public class SnowballSize : MonoBehaviour
     {
         if (Mathf.Abs(rb.velocity.x) > stoppingSpeed && IsGrounded())
         {
-            //Grow();
-            growth?.Invoke();
+            Grow();
         }
     }
 
@@ -34,6 +32,8 @@ public class SnowballSize : MonoBehaviour
 
         transform.localScale = transform.localScale + new Vector3(growthRate * growthAdjustment, growthRate * growthAdjustment, 0);
         groundedRange += growthRate * growthAdjustment;
+
+        growth?.Invoke();
     }
 
     bool IsGrounded()
@@ -54,6 +54,6 @@ public class SnowballSize : MonoBehaviour
 
     private void OnDestroy()
     {
-        growth -= Grow;
+        //growth -= Grow;
     }
 }
