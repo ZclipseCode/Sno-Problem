@@ -9,7 +9,7 @@ public class BouncePad : MonoBehaviour
 
     private void Start()
     {
-        horizontalBounceForce = bounceForce / 4;
+        horizontalBounceForce = bounceForce / 2;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
