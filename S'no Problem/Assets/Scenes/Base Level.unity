@@ -237,6 +237,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ef2a25969916248a3f0edfcd229f09, type: 3}
+--- !u!114 &295871773 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5153903494925513215, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
+  m_PrefabInstance: {fileID: 1335914163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &395048534
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,7 +260,7 @@ GameObject:
   - component: {fileID: 395048538}
   - component: {fileID: 395048537}
   - component: {fileID: 395048536}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -769,7 +780,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 0
+      m_TileSpriteIndex: 8
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -899,7 +910,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 1
-      m_TileSpriteIndex: 1
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -926,10 +937,10 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 1800348620, guid: c967f44dc8d11e44783557f78c2b1f48, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: -871698300, guid: c967f44dc8d11e44783557f78c2b1f48, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 12
     m_Data: {fileID: -1217853319, guid: c967f44dc8d11e44783557f78c2b1f48, type: 3}
   - m_RefCount: 3
@@ -940,10 +951,10 @@ Tilemap:
     m_Data: {fileID: -21269884, guid: c967f44dc8d11e44783557f78c2b1f48, type: 3}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 1
+    m_Data: {fileID: -871698300, guid: c967f44dc8d11e44783557f78c2b1f48, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 1800348620, guid: c967f44dc8d11e44783557f78c2b1f48, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 56
     m_Data:
@@ -1160,6 +1171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 119576033764713333, guid: d57f3dc892274714dbcd129b12a96b0f, type: 3}
+      propertyPath: level
+      value: 
+      objectReference: {fileID: 295871773}
     - target: {fileID: 119576033764713333, guid: d57f3dc892274714dbcd129b12a96b0f, type: 3}
       propertyPath: radi.Array.data[0]
       value: 
