@@ -9,6 +9,8 @@ public class PlayerClimb : MonoBehaviour
     PlayerControls playerControls;
     float gravityScale;
 
+    bool hasInteracted;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,7 +23,14 @@ public class PlayerClimb : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.CompareTag("Ladder"))
+        float input = playerControls.Player.Climb.ReadValue<float>();
+
+        if (Mathf.Abs(input) > 0)
+        {
+            hasInteracted = true;
+        }
+
+        if (collision.CompareTag("Ladder") && hasInteracted)
         {
             Climb();
         }
@@ -45,6 +54,8 @@ public class PlayerClimb : MonoBehaviour
     void ClimbEnd()
     {
         rb.gravityScale = gravityScale;
+
+        hasInteracted = false;
     }
 
     private void OnDestroy()

@@ -11,7 +11,7 @@ public class Goal : MonoBehaviour
     float distanceThreshold = 0.01f;
     float previousSnowballHeight = 0;
     float snowmanIntersection = 0.08f;
-    int sortingOrder = 0;
+    int sortingOrder = -1;
     int totalSnowballs;
 
     List<float> snowballRadi;
