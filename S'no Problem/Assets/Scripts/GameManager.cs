@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public delegate void NextSceneDelegate();
     public static NextSceneDelegate nextScene;
 
+    [SerializeField] string goalScene = "Level 1";
     public static bool isMining;
 
     private void Awake()
@@ -19,7 +20,7 @@ public class GameManager : MonoBehaviour
 
     public void NextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(goalScene);
     }
 
     private void OnDestroy()

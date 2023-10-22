@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Goal : MonoBehaviour
 {
@@ -67,7 +68,7 @@ public class Goal : MonoBehaviour
 
         if (totalSnowballs >= targetSnowballs && snowballRadi[0] >= snowballRadi[1])
         {
-            Debug.Log("Win");
+            GameManager.activateTransition();
         }
         else if (totalSnowballs >= targetSnowballs && snowballRadi[0] < snowballRadi[1])
         {
