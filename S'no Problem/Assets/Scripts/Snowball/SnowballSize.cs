@@ -5,10 +5,11 @@ using UnityEngine;
 public class SnowballSize : MonoBehaviour
 {
     [SerializeField] float growthRate = 1;
-    [SerializeField] float groundedRange = 0.01f;
     [SerializeField] LayerMask ground;
+    float groundedRange;
     Rigidbody2D rb;
     float stoppingSpeed = 0.1f;
+    float rangeAdjustment = 5.5f;
 
     public delegate void GrowthDelegate();
     public static GrowthDelegate growth;
@@ -16,6 +17,11 @@ public class SnowballSize : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        AdjustGroundedRange();
     }
 
     private void FixedUpdate()
@@ -31,7 +37,7 @@ public class SnowballSize : MonoBehaviour
         float growthAdjustment = Time.deltaTime * 0.1f;
 
         transform.localScale = transform.localScale + new Vector3(growthRate * growthAdjustment, growthRate * growthAdjustment, 0);
-        groundedRange += growthRate * growthAdjustment;
+        AdjustGroundedRange();
 
         growth?.Invoke();
     }
@@ -46,14 +52,14 @@ public class SnowballSize : MonoBehaviour
         return false;
     }
 
+    void AdjustGroundedRange()
+    {
+        groundedRange = transform.localScale.y / rangeAdjustment;
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position, new Vector2(transform.position.x, transform.position.y) + Vector2.down * groundedRange);
-    }
-
-    private void OnDestroy()
-    {
-        //growth -= Grow;
     }
 }

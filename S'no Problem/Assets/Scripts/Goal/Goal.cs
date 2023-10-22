@@ -13,11 +13,18 @@ public class Goal : MonoBehaviour
     int sortingOrder = 0;
     int totalSnowballs;
 
+    List<float> snowballRadi;
+
+    private void Start()
+    {
+        snowballRadi = new List<float>();
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Snowball"))
         {
-            IncreaseSnowballs();
+            IncreaseSnowballs(collision.bounds.size.y / 2);
 
             sortingOrder++;
             SpriteRenderer sr = collision.GetComponent<SpriteRenderer>();
@@ -53,13 +60,18 @@ public class Goal : MonoBehaviour
         snowball.GetComponent<Collider2D>().isTrigger = true;
     }
 
-    void IncreaseSnowballs()
+    void IncreaseSnowballs(float snowballRadius)
     {
         totalSnowballs++;
+        snowballRadi.Add(snowballRadius);
 
-        if (totalSnowballs >= targetSnowballs)
+        if (totalSnowballs >= targetSnowballs && snowballRadi[0] >= snowballRadi[1])
         {
             Debug.Log("Win");
+        }
+        else if (totalSnowballs >= targetSnowballs && snowballRadi[0] < snowballRadi[1])
+        {
+            Debug.Log("Lose");
         }
     }
 }

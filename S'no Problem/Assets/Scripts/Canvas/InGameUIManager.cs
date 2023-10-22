@@ -12,6 +12,8 @@ public class InGameUIManager : MonoBehaviour
     [SerializeField] GameObject[] snowballGos = new GameObject[2];
     float[] snowballRadius;
 
+    [SerializeField] RectTransform transition;
+
     private void Awake()
     {
         SnowballSize.growth += ChangeSnowballRadius;
@@ -31,7 +33,7 @@ public class InGameUIManager : MonoBehaviour
         for (int i = 0; i < radi.Length; i++)
         {
             snowballRadius[i] = snowballGos[i].GetComponent<Collider2D>().bounds.size.y / 2;
-            radi[i].text = Math.Round(snowballRadius[i], 2).ToString();
+            radi[i].text = snowballRadius[i].ToString("F2");
         }
     }
 
