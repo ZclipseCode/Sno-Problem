@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf1b339c0b5a304bafa55171853476d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceForce: 2500
+  bounceForce: 2700
 --- !u!95 &1058152685
 Animator:
   serializedVersion: 5

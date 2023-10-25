@@ -14,7 +14,7 @@ public class BouncePad : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Snowball"))
+        if (collision.CompareTag("Snowball") && !collision.isTrigger)
         {
             Bounce(collision.GetComponent<Rigidbody2D>());
         }
