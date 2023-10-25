@@ -22,8 +22,17 @@ public class BouncePad : MonoBehaviour
 
     void Bounce(Rigidbody2D rb)
     {
-        float horizontalDirection = rb.velocity.x / Mathf.Abs(rb.velocity.x);
+        float horizontalDirection;
 
-        rb.AddForce(new Vector2(horizontalBounceForce * horizontalDirection, bounceForce));
+        if (rb.velocity.x != 0)
+        {
+            horizontalDirection = rb.velocity.x / Mathf.Abs(rb.velocity.x);
+        }
+        else
+        {
+            horizontalDirection = 0;
+        }
+
+        rb.AddForce(transform.right * horizontalBounceForce * horizontalDirection + transform.up * bounceForce);
     }
 }
