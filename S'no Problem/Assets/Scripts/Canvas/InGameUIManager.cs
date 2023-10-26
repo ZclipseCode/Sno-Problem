@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class InGameUIManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class InGameUIManager : MonoBehaviour
     {
         SnowballSize.growth += ChangeSnowballRadius;
         GameManager.activateTransition += ActivateTransition;
+        GameManager.restartTransition += ActivateRestartTransitionOut;
     }
 
     private void Start()
@@ -76,6 +78,26 @@ public class InGameUIManager : MonoBehaviour
         transition.localScale = Vector3.zero;
     }
 
+    void ActivateRestartTransitionOut()
+    {
+        StartCoroutine(RestartTransitionOut());
+    }
+
+    IEnumerator RestartTransitionOut()
+    {
+        float targetScale = 10;
+        float increment = transitionSpeed * Time.deltaTime;
+
+        while (transition.localScale.x < targetScale)
+        {
+            transition.localScale += new Vector3(increment, increment, 0);
+
+            yield return null;
+        }
+
+        GameManager.goToScene(SceneManager.GetActiveScene().name);
+    }
+
     IEnumerator WinTime()
     {
         float winTime = 1.5f;
@@ -95,5 +117,6 @@ public class InGameUIManager : MonoBehaviour
     {
         SnowballSize.growth -= ChangeSnowballRadius;
         GameManager.activateTransition -= ActivateTransition;
+        GameManager.restartTransition -= ActivateRestartTransitionOut;
     }
 }
