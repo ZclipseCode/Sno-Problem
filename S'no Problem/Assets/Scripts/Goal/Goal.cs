@@ -72,7 +72,7 @@ public class Goal : MonoBehaviour
         }
         else if (totalSnowballs >= targetSnowballs && snowballRadi[0] < snowballRadi[1])
         {
-            Debug.Log("Lose");
+            GameManager.restartTransition();
         }
     }
 }
