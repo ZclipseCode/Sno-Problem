@@ -50,15 +50,15 @@ TagManager:
   - name: Midground
     uniqueID: 1310432715
     locked: 0
+  - name: Foreground
+    uniqueID: 899394435
+    locked: 0
   - name: Snowball
     uniqueID: 4140275587
-    locked: 0
-  - name: Characters
-    uniqueID: 814117759
     locked: 0
   - name: Items
     uniqueID: 3749286961
     locked: 0
-  - name: Foreground
-    uniqueID: 899394435
+  - name: Characters
+    uniqueID: 814117759
     locked: 0
