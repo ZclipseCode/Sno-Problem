@@ -6,39 +6,42 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/In Game/Menus.unity
+    guid: 2614fc778e25ecc4598c2040a9de57d7
+  - enabled: 1
+    path: Assets/Scenes/In Game/Level 1.unity
     guid: 9e64fa4c4fcf171409775d260fca8f51
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/In Game/Level 2.unity
     guid: d954d10ad55fad44190b05b6cfe5e3c1
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/In Game/Level 3.unity
     guid: 617e3b550b286664fb140caf4be1b12f
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
+    path: Assets/Scenes/In Game/Level 4.unity
     guid: f00afd83cb8ae104e975462df192756f
   - enabled: 1
-    path: Assets/Scenes/Level 5.unity
+    path: Assets/Scenes/In Game/Level 5.unity
     guid: fb3fc3bfa26a27740a040c276d27b6bd
   - enabled: 1
-    path: Assets/Scenes/Level 6.unity
+    path: Assets/Scenes/In Game/Level 6.unity
     guid: 592061b18b5b89641a7bc5489c6b04f4
   - enabled: 1
-    path: Assets/Scenes/Level 7.unity
+    path: Assets/Scenes/In Game/Level 7.unity
     guid: 7a0cd20b9b1f79e479dd95b0a1bc4f18
   - enabled: 1
-    path: Assets/Scenes/Level 8.unity
+    path: Assets/Scenes/In Game/Level 8.unity
     guid: f43e934eca8ff664cb432235144bd3f2
   - enabled: 1
-    path: Assets/Scenes/Level 9.unity
+    path: Assets/Scenes/In Game/Level 9.unity
     guid: c2da2733a55481c489ebf8ea923dbadb
   - enabled: 1
-    path: Assets/Scenes/Level 10.unity
+    path: Assets/Scenes/In Game/Level 10.unity
     guid: fb603e0c4be2a514384fc958bcfdd683
   - enabled: 1
-    path: Assets/Scenes/Level 11.unity
-    guid: a470d1d561d732a45af33676bec1423d
-  - enabled: 1
-    path: Assets/Scenes/Level 12.unity
+    path: Assets/Scenes/In Game/Level 11.unity
     guid: 979d83da207b2664ab43dfa1757bffc2
+  - enabled: 1
+    path: Assets/Scenes/In Game/Level 12.unity
+    guid: a470d1d561d732a45af33676bec1423d
   m_configObjects: {}
