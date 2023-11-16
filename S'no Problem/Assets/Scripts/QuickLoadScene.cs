@@ -7,6 +7,7 @@ public class QuickLoadScene : MonoBehaviour
 {
     public void LoadScene(string scene)
     {
+        PauseManager.paused = false;
         Time.timeScale = 1;
         SceneManager.LoadScene(scene);
     }

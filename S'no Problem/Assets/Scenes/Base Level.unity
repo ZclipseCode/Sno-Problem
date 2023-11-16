@@ -309,7 +309,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 899394435
-  m_SortingLayer: 6
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -457,7 +457,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 899394435
-  m_SortingLayer: 6
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1356,6 +1356,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: In Game Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5124539530392892486, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1372878983}
+    - target: {fileID: 5124539530392892486, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Toggle
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
 --- !u!114 &1335914164 stripped
@@ -1392,6 +1400,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1668922836, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
+      propertyPath: pauseMenu
+      value: 
+      objectReference: {fileID: 1542278490}
     - target: {fileID: 6879013226960047248, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
       propertyPath: m_Name
       value: Game Manager
@@ -1442,6 +1454,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
+--- !u!114 &1372878983 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1668922836, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
+  m_PrefabInstance: {fileID: 1341043397}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecf8788658f8954c9e8da558603b6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1440100085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,7 +1538,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 899394435
-  m_SortingLayer: 6
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1615,6 +1638,11 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
+--- !u!1 &1542278490 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1005814347, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
+  m_PrefabInstance: {fileID: 1335914163}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1631244458
 GameObject:
   m_ObjectHideFlags: 0
