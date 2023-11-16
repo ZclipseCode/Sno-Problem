@@ -24,7 +24,7 @@ public class PlayerOptions : MonoBehaviour
         if (playerControls.Player.Restart.ReadValue<float>() != 0 && !restartPressed)
         {
             restartPressed = true;
-            GameManager.restartTransition?.Invoke();
+            GameManager.restartTransition?.Invoke(0);
         }
     }
 

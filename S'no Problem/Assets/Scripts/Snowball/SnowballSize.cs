@@ -6,6 +6,7 @@ public class SnowballSize : MonoBehaviour
 {
     [SerializeField] float growthRate = 1;
     [SerializeField] LayerMask ground;
+    [SerializeField] float restartWaitTime = 0.5f;
     float groundedRange;
     Rigidbody2D rb;
     float stoppingSpeed = 0.1f;
@@ -55,6 +56,11 @@ public class SnowballSize : MonoBehaviour
     void AdjustGroundedRange()
     {
         groundedRange = transform.localScale.y / rangeAdjustment;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.restartTransition?.Invoke(restartWaitTime);
     }
 
     private void OnDrawGizmos()

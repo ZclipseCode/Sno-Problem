@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float speed = 1;
     [SerializeField] float maxSpeed = 1;
     [SerializeField] bool facingRight;
+    [SerializeField] float restartWaitTime = 0.5f;
     Rigidbody2D rb;
     PlayerControls playerControls;
 
@@ -58,6 +59,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDestroy()
     {
+        GameManager.restartTransition?.Invoke(restartWaitTime);
+
         playerControls.Player.Disable();
     }
 }

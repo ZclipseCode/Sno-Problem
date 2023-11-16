@@ -51,8 +51,10 @@ public class InGameUIManager : MonoBehaviour
         StartCoroutine(WinTime());
     }
 
-    IEnumerator TransitionOut()
+    IEnumerator TransitionOut(float time)
     {
+        yield return new WaitForSeconds(time);
+
         float targetScale = 10;
         float increment = transitionSpeed * Time.deltaTime;
 
@@ -81,13 +83,15 @@ public class InGameUIManager : MonoBehaviour
         transition.localScale = Vector3.zero;
     }
 
-    void ActivateRestartTransitionOut()
+    void ActivateRestartTransitionOut(float time)
     {
-        StartCoroutine(RestartTransitionOut());
+        StartCoroutine(RestartTransitionOut(time));
     }
 
-    IEnumerator RestartTransitionOut()
+    IEnumerator RestartTransitionOut(float time)
     {
+        yield return new WaitForSeconds(time);
+
         float targetScale = 10;
         float increment = transitionSpeed * Time.deltaTime;
 
@@ -107,7 +111,7 @@ public class InGameUIManager : MonoBehaviour
 
         yield return new WaitForSeconds(winTime);
 
-        StartCoroutine(TransitionOut());
+        StartCoroutine(TransitionOut(0));
     }
 
     void LevelStart()

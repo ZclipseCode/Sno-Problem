@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public delegate void NextSceneDelegate();
     public static NextSceneDelegate nextScene;
 
-    public delegate void RestartTransitionDelegate();
+    public delegate void RestartTransitionDelegate(float time);
     public static RestartTransitionDelegate restartTransition;
     public delegate void GoToSceneDelegate(string scene);
     public static GoToSceneDelegate goToScene;
