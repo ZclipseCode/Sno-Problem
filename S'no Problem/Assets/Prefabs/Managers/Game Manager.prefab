@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6879013226960047254}
   - component: {fileID: 6879013226960047249}
+  - component: {fileID: 1668922836}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -45,3 +46,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalScene: Level 1
+--- !u!114 &1668922836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6879013226960047248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ecf8788658f8954c9e8da558603b6a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 0}

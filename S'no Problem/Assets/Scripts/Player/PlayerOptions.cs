@@ -17,6 +17,7 @@ public class PlayerOptions : MonoBehaviour
     private void Update()
     {
         RestartLevel();
+        Pause();
     }
 
     void RestartLevel()
@@ -25,6 +26,14 @@ public class PlayerOptions : MonoBehaviour
         {
             restartPressed = true;
             GameManager.restartTransition?.Invoke(0);
+        }
+    }
+
+    void Pause()
+    {
+        if (playerControls.Player.Pause.ReadValue<float>() != 0 && !PauseManager.paused)
+        {
+            PauseManager.togglePauseMenu?.Invoke();
         }
     }
 

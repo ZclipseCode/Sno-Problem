@@ -21,15 +21,18 @@ public class PlayerAnimation : MonoBehaviour
 
     private void Update()
     {
-        float input = playerControls.Player.Movement.ReadValue<float>();
-        
-        if (Mathf.Abs(input) > 0)
+        if (Time.timeScale > 0)
         {
-            animator.SetBool(IS_WALKING, true);
-        }
-        else
-        {
-            animator.SetBool(IS_WALKING, false);
+            float input = playerControls.Player.Movement.ReadValue<float>();
+
+            if (Mathf.Abs(input) > 0)
+            {
+                animator.SetBool(IS_WALKING, true);
+            }
+            else
+            {
+                animator.SetBool(IS_WALKING, false);
+            }
         }
     }
 
