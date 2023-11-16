@@ -38,8 +38,11 @@ public class InGameUIManager : MonoBehaviour
     {
         for (int i = 0; i < radi.Length; i++)
         {
-            snowballRadius[i] = snowballGos[i].GetComponent<Collider2D>().bounds.size.y / 2;
-            radi[i].text = snowballRadius[i].ToString("F2");
+            if (snowballGos[i] != null)
+            {
+                snowballRadius[i] = snowballGos[i].GetComponent<Collider2D>().bounds.size.y / 2;
+                radi[i].text = snowballRadius[i].ToString("F2");
+            }
         }
     }
 
