@@ -13,22 +13,22 @@ public class MenuManager : MonoBehaviour
     [SerializeField] GameObject howToPlay;
     [SerializeField] GameObject credits;
 
-    private void Awake()
-    {
-        GameManager.activateTransition += ActivateTransition;
-    }
+    //private void Awake()
+    //{
+    //    GameManager.activateTransition += ActivateTransition;
+    //}
 
     private void Start()
     {
         LevelStart();
     }
 
-    void ActivateTransition()
+    public void ActivateTransition(string scene)
     {
-        StartCoroutine(WinTime());
+        StartCoroutine(TransitionOut(0, scene));
     }
 
-    IEnumerator TransitionOut(float time)
+    IEnumerator TransitionOut(float time, string scene)
     {
         yield return new WaitForSeconds(time);
 
@@ -42,7 +42,9 @@ public class MenuManager : MonoBehaviour
             yield return null;
         }
 
-        GameManager.nextScene();
+        // different!
+        //GameManager.nextScene();
+        GoToScene(scene);
     }
 
     IEnumerator TransitionIn()
@@ -58,15 +60,6 @@ public class MenuManager : MonoBehaviour
         }
 
         transition.localScale = Vector3.zero;
-    }
-
-    IEnumerator WinTime()
-    {
-        float winTime = 1.5f;
-
-        yield return new WaitForSeconds(winTime);
-
-        StartCoroutine(TransitionOut(0));
     }
 
     void LevelStart()
@@ -113,13 +106,13 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    //public void GoToScene(string scene)
-    //{
-    //    GameManager.goToScene(scene);
-    //}
-
-    private void OnDestroy()
+    public void GoToScene(string scene)
     {
-        GameManager.activateTransition -= ActivateTransition;
+        SceneManager.LoadScene(scene);
     }
+
+    //private void OnDestroy()
+    //{
+    //    GameManager.activateTransition -= ActivateTransition;
+    //}
 }
