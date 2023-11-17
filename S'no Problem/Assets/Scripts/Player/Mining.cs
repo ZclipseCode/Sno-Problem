@@ -8,6 +8,8 @@ public class Mining : MonoBehaviour
     {
         if (collision.CompareTag("Icicle"))
         {
+            SfxManager.icicleShatter?.Invoke();
+
             Destroy(collision.gameObject);
         }
     }

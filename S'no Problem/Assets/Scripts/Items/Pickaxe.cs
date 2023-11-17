@@ -12,6 +12,8 @@ public class Pickaxe : MonoBehaviour
 
             GameManager.isMining = true;
 
+            SfxManager.pickaxeCollected?.Invoke();
+
             Destroy(gameObject);
         }
     }

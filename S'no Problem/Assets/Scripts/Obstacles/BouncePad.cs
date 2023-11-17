@@ -16,6 +16,8 @@ public class BouncePad : MonoBehaviour
     {
         if (collision.CompareTag("Snowball") && !collision.isTrigger)
         {
+            SfxManager.bouncePadActivated?.Invoke();
+
             Bounce(collision.GetComponent<Rigidbody2D>());
         }
     }

@@ -68,10 +68,14 @@ public class Goal : MonoBehaviour
 
         if (totalSnowballs >= targetSnowballs && snowballRadi[0] >= snowballRadi[1])
         {
-            GameManager.activateTransition();
+            SfxManager.goalAchieved?.Invoke();
+
+            GameManager.activateTransition?.Invoke();
         }
         else if (totalSnowballs >= targetSnowballs && snowballRadi[0] < snowballRadi[1])
         {
+            SfxManager.levelFailed?.Invoke();
+
             GameManager.restartTransition(0);
         }
     }
