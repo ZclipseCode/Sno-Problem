@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     {
         nextScene += NextScene;
         goToScene += GoToScene;
+        SceneManager.sceneLoaded += ResetIsMining;
     }
 
     public void NextScene()
@@ -34,9 +35,15 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(scene);
     }
 
+    public void ResetIsMining(Scene scene, LoadSceneMode mode)
+    {
+        isMining = false;
+    }
+
     private void OnDestroy()
     {
         nextScene -= NextScene;
         goToScene -= GoToScene;
+        SceneManager.sceneLoaded -= ResetIsMining;
     }
 }
