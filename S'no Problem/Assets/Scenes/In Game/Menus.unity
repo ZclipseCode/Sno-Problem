@@ -4225,7 +4225,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.0000038146973}
+  m_AnchoredPosition: {x: 0, y: -17}
   m_SizeDelta: {x: 449.2042, y: 169.4104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1082104254
@@ -4252,14 +4252,15 @@ MonoBehaviour:
     smaller than the body.
 
 
-    A/D and Left/Right - Move Left/Right
+    A/D, Left/Right Arrows, Left Stick - Move Left/Right
 
-    W/S and
-    Up/Down- Climb Up/Down Ladders
+    W/S,
+    Up/Down Arrows, Left Stick - Climb Up/Down Ladders
 
-    P - Pause
+    P, Start - Pause
 
-    R - Restart'
+    R,
+    Back - Restart'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -4286,8 +4287,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 21
-  m_fontSizeBase: 21
+  m_fontSize: 16
+  m_fontSizeBase: 16
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6122,7 +6123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1613140107
 RectTransform:
   m_ObjectHideFlags: 0
