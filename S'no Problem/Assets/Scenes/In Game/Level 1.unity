@@ -2377,10 +2377,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 537098062}
-    - target: {fileID: 5124539530392892486, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Toggle
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
 --- !u!114 &1335914164 stripped
