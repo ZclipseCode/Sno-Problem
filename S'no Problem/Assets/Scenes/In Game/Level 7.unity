@@ -1435,7 +1435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4865407554546473579, guid: a469c899465fbae498fb9011ef6e4cda, type: 3}
       propertyPath: m_text
-      value: Good thing this bounce pad can launch snowballs!
+      value: Good thing that bounce pad can launch snowballs!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a469c899465fbae498fb9011ef6e4cda, type: 3}
