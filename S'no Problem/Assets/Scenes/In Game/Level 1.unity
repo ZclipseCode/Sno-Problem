@@ -3274,7 +3274,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 780181561517410575, guid: 9d2a496577ab8a94c890bda53c2c8937, type: 3}
       propertyPath: m_Name
-      value: Barriers (1)
+      value: Barriers
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9d2a496577ab8a94c890bda53c2c8937, type: 3}
