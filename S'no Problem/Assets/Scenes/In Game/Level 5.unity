@@ -3213,7 +3213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6879013226960047249, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
       propertyPath: goalScene
-      value: Level 1
+      value: Level 6
       objectReference: {fileID: 0}
     - target: {fileID: 6879013226960047254, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
       propertyPath: m_RootOrder
