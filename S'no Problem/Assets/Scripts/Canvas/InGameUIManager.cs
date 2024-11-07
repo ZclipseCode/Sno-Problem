@@ -41,7 +41,7 @@ public class InGameUIManager : MonoBehaviour
             if (snowballGos[i] != null)
             {
                 snowballRadius[i] = snowballGos[i].GetComponent<Collider2D>().bounds.size.y / 2;
-                radi[i].text = snowballRadius[i].ToString("F2");
+                radi[i].text = (snowballRadius[i] * 100f).ToString("F0");
             }
         }
     }

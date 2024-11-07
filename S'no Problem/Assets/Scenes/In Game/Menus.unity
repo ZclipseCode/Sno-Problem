@@ -757,7 +757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 6
+  m_text: 06
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1
+  m_text: 01
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -1383,7 +1383,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 6
+          m_StringArgument: Level 06
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &335778318
@@ -2619,7 +2619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 9
+  m_text: 09
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -2867,7 +2867,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 3
+          m_StringArgument: Level 03
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &500944941
@@ -3630,7 +3630,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 5
+  m_text: 05
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -3803,7 +3803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: 02
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -4395,7 +4395,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 3
+  m_text: 03
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -4530,7 +4530,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 8
+  m_text: 08
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -4700,7 +4700,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 8
+          m_StringArgument: Level 08
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1181471920
@@ -4883,7 +4883,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 1
+          m_StringArgument: Level 01
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1317552126
@@ -5029,7 +5029,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 2
+          m_StringArgument: Level 02
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1325559012
@@ -5585,7 +5585,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 4
+          m_StringArgument: Level 04
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1449520922
@@ -5719,7 +5719,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 9
+          m_StringArgument: Level 09
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1455975499
@@ -6088,7 +6088,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 4
+  m_text: 04
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -6509,7 +6509,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 7
+  m_text: 07
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
   m_sharedMaterial: {fileID: -4208680178038791161, guid: 1094843f673508543ae3dc26a65a4605, type: 2}
@@ -7545,7 +7545,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 7
+          m_StringArgument: Level 07
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2003258201
@@ -7814,7 +7814,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level 5
+          m_StringArgument: Level 05
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2105842395
@@ -8500,3 +8500,60 @@ Transform:
   m_Father: {fileID: 7914123486703931173}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &8297957049616445767
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8297957049482929921, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_Name
+      value: Snow Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297957049482929934, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 755c04cee3261f24681653ae4acdef7a, type: 3}
