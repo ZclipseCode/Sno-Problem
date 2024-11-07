@@ -2988,7 +2988,7 @@ PrefabInstance:
     - target: {fileID: 119576033764713333, guid: d57f3dc892274714dbcd129b12a96b0f, type: 3}
       propertyPath: level
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1335914167}
     - target: {fileID: 119576033764713333, guid: d57f3dc892274714dbcd129b12a96b0f, type: 3}
       propertyPath: transition
       value: 
@@ -3369,6 +3369,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 767239046, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
   m_PrefabInstance: {fileID: 1335914163}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1335914167 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7521957128644900562, guid: c47b1690909ad8a4abafb34f5474ee09, type: 3}
+  m_PrefabInstance: {fileID: 1335914163}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1341043397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3386,7 +3397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6879013226960047249, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
       propertyPath: goalScene
-      value: Level 7
+      value: Level 07
       objectReference: {fileID: 0}
     - target: {fileID: 6879013226960047254, guid: f206a7fb0295d4a4e8e40f8be440d37d, type: 3}
       propertyPath: m_RootOrder
